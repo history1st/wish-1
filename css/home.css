@@ -1,0 +1,1793 @@
+/*-------------------------pc버전-----------------------------*/
+@media(min-width:1200px){
+
+/* 배경 */
+.none,.none-1-1{
+  display: none;
+}
+body {
+  background-image: url(../img/main_visual_bg\ copy-1.jpg);
+  background-size: 100px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+/*노란색 틀*/
+.bookcover {
+  background-color: rgb(252, 199, 102);
+  border-radius: 9px;
+  border: 1px solid #738186;
+  width: 1200px;
+  height: 750px;
+  margin: 50px;
+  position: relative;
+  margin: 50px auto;
+}
+/*흰색 선*/
+.bookdot {
+  border-radius: 9px;
+  border: 2px dashed #ffffff;
+  padding: 15px;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  right: 15px;
+  bottom: 15px;
+}
+/*안쪽 회색배경*/
+.page {
+  background-color: #eeeeee;
+  border-radius: 9px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+  display: flex;
+  padding: 15px;
+}
+/*프로필 (왼쪽) 박스*/
+.profile-container {
+  flex: 0.4;
+  margin-right: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+/*미니룸 (중앙) 박스*/
+.content-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+/*메뉴바 (오른쪽) 박스*/
+.menu-container {
+  flex: 0.15;
+}
+/* ---------------------------------------------- */
+
+/* 링 누끼 */
+.ring-1 img{
+  width: 75px;
+  height: 80px;
+}
+.ring-1{
+  position: absolute;
+  top:19%;
+  left: 21%;
+}
+.ring-2 img{
+  width: 75px;
+  height: 80px;
+}
+.ring-2{
+  position: absolute;
+  top:25%;
+  left: 21%;
+}
+.ring-3 img{
+  width: 75px;
+  height: 80px;
+}
+.ring-3{
+  position: absolute;
+  bottom:25%;
+  left: 21%;
+}
+.ring-4 img{
+  width: 75px;
+  height: 80px;
+}
+.ring-4{
+  position: absolute;
+  bottom: 19%;
+  left: 21%;
+}
+.header {
+  flex: 0.1;
+}
+
+/* 안에 큰 회색 박스 */
+.box {
+  background-color: white;
+  flex: 3;
+  border-radius: 10px;
+  border: 1px solid #cdcdcd;
+}
+
+/* 위시월드 로고있는곳 */
+.content-title {
+  display: flex;
+  align-items: center;
+}
+
+.content-title-name {
+  flex: 1;
+  padding-bottom: 5px;
+}
+
+/* ----------------프로필------------------------- */
+
+/* 프로필 투데이 토탈 */
+.profile-title {
+  padding-bottom: 5px;
+  font-size: 0.8rem;
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  gap:5px;
+  color: rgb(75, 75, 75);
+}
+.color-orange {
+  color: orange
+}
+
+/* 프로필 박스 */
+.profile-box {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+/* 프로필 이미지 */
+.profile-image {
+  flex: none;
+}
+
+.profile-image-img {
+  width: 100%;
+  height: 100%;
+}
+/* 프로필 밑 점선 */
+.border1{
+  border-bottom: 1px dashed #ddd;
+  padding-top: 10px;
+}
+/* 프로필 아래 텍스트 */
+.profile-text {
+  width: 100%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-size: 0.75rem;
+  line-height:3;
+  flex: 1;
+  font-family: 'Interop';
+}
+.profile-text h6{
+  font-size: 13px;
+  color:#003399;
+}
+.profile-text p{
+  font-size: 15px;
+  line-height:10px;
+  padding-bottom: 12px;
+}
+
+/*프로필 이름 아래*/
+.profile-use{
+  flex: 0;
+}
+.profile-use span{
+  font-size: 18px;
+  font-weight: bold;
+  color: #003399;
+}
+.profile-use p{
+  color: orange;
+  font-size: 12px;
+}
+.border2{
+  border-top: 1px dashed #ddd;
+  padding-bottom: 5px;
+}
+.content-box{
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  overflow: auto;
+}
+
+/* ---------------------메뉴바---------------------- */
+
+/*메뉴바*/
+.menu-button button{
+  width: 80px;
+  height: 50px;
+  text-align: left;
+  margin-bottom: 0.9rem;
+  font-size: 0.9rem;
+  font-family: 'Interop';
+  padding: 0.4rem;
+  background-color: rgb(252, 187, 89);
+  color:#000;
+  border-radius: 0 5px 5px 0;
+  border: 1px solid grey;
+  cursor: pointer;
+}
+
+/* 메뉴바 위치 */
+.menu-button:first-child{
+  margin-top: 3rem;
+}
+
+/* 메뉴바 호버 */
+a button:hover {
+  background-color:#fff;
+  color:  rgb(252, 187, 89);
+}
+
+/* -------------------------------------------------- */
+
+/* 프로필 파도타기 */
+.profile-dropdown{
+  flex: 0;
+  border: 1px solid #c9d4da;
+  padding: 5px;
+  margin-top: 10px;
+  font-size: 0.8rem;
+  position: relative;
+}
+.dropdown-title{
+  display: flex;
+  justify-content: space-between;
+}
+/* 인스타그램 아래 태그 숨기기 */
+.dropdown-content{
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+/* 인스타 마우스 호버하면 보이게 */
+.profile-dropdown:hover > .dropdown-content{
+  display: block;
+}
+
+.dropdown-content > a{
+  display: block;
+  background-color: #f9f9f9;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  padding: 6px;
+  color: black;
+  text-decoration: none;
+}
+
+.dropdown-content > a:hover{
+  background-color: #f1f1f1;
+}
+
+/* ---------------------미니룸----------------------- */
+
+/* 미니룸 박스 */
+.miniroom-gif-box {
+  border: 1px solid #d6d6d6;
+  width:680px;
+  height:280px;
+}
+/* 미니룸 사진 */
+.miniroom-gif-box img{
+  width:680px;
+  height:280px;
+}
+/* 미니룸 글자 */
+.box-title > ul{
+  display: flex;
+  justify-content: space-between;
+}
+.box-title li:last-child{
+  color:#6e6e6e;
+  font-size: 10px;
+}
+.box-title {
+  font-size: 12px;
+  font-family: "KOTRA_BOLD-Bold";
+  color: #268ab8;
+  padding-bottom: 5px;
+}
+/* ---------------------프렌드----------------------- */
+
+/* 프렌드 세이 박스 */
+.say > ul{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px;
+  padding-bottom: 5px;
+}
+.say-font{
+  height: 25px;
+  line-height: 25px;
+  font-size: 18px;
+  font-family: 'Interop';
+  font-weight: bolder;
+  color: #6e6e6e;
+}
+.say-box1{
+  width: 75%;
+  height: 26px;
+  border: 1px solid #ddd;
+  font-size: 12px;
+  font-family: 'IBMPlexSansKR-Regular';
+  text-align: center;
+  line-height: 25px;
+  box-sizing: border-box;
+}
+.say-box2{
+  border: 1px solid #ddd;
+  font-size: 12px;
+  font-family: 'IBMPlexSansKR-Regular';
+  width:8%;
+  text-align: center;
+  height: 24px;
+  line-height: 24px;
+}
+
+/* 친구들 생각*/
+.friend{
+  font-size: 12.5px;
+  line-height: 28px;
+  border-bottom: 1px solid #ddd;
+}
+.color-blue{
+  color: #003399;
+  font-weight: bold;
+}
+.color-gray{
+  color:#738186;
+  font-size: 11px;
+}
+/* ----------------------스킬---------------------- */
+
+/* 스킬 */
+.none-1{
+  padding: 60px 0px;
+}
+.none-1 > ul{
+  display: flex;
+  width:100%;
+}
+.none-1 h1{
+  font-size: 40px;
+  height:40px;
+  line-height: 30px;
+  color: #666666;
+  padding: 20px 0px 30px 0px;
+  padding-left: 30px;
+}
+.none-1 li{
+  width:20%;
+  height: 40px;
+  line-height: 40px;
+  font-size: 17px;
+  padding-left: 30px;
+}
+
+/* 스킬 막대기 */
+.one{
+  width:100%;
+  height:40px;
+  background-color:#ddd;
+  margin: 12px;
+}
+.one div{
+  height:100%;
+  text-align:center;
+  line-height:40px;
+}
+.one-pink{
+  width:0%;
+  color:#5f5f5f;
+  background-color:#fbc15d}
+.one-blue{
+  width:0%;
+  color:#5f5f5f;
+  background-color:#ffc59e}
+.one-yellow{
+  width:0%;
+  color:#5f5f5f;
+  background-color:#ffc59e}
+.one-red{
+  width:0%;
+  color:#5f5f5f;
+  background-color:#fbc15d}
+.one-green{
+  width:0%;
+  color:#5f5f5f;
+  background-color:#fbc15d}
+.one-purple{
+  width:0%;
+  color:#474747;
+  background-color:#fbc15d}
+
+/* -------------------------------------------- */
+
+/* 포트폴리오1 페이지 */
+.con2-portfolio{
+  padding: 50px 0px;
+}
+.con2-portfolio h3{
+  font-size: 40px;
+  height:40px;
+  line-height: 30px;
+  color: #666666;
+  padding: 20px 0px 30px 0px;
+  padding-left: 30px;
+}
+.con2-canmoa li{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding-bottom: 30px;
+  line-height: 40px;
+  padding-left: 30px;
+}
+.con2-box1{
+  display: flex;
+
+  justify-content: space-between;
+}
+.con2-box2{
+  display: flex;
+  justify-content: space-between;
+}
+.con2-box3{
+  display: flex;
+  justify-content: space-between;
+}
+.con2-mun{
+  display: flex;
+  gap:60px;
+  justify-content: center;
+  margin-bottom: 50px;
+  margin-top: 20px;
+}
+.con2-mun a{
+  font-size: 18px;
+  font-weight: bold;
+  color: #363636;
+  padding: 15px;
+}
+.con2-canmoa{
+  width:660px;
+}
+.con2-canmoa h4{
+  font-size: 23px;
+  padding-bottom: 10px;
+}
+.con2-canmoa span{
+  font-size: 20px;
+}
+.con2-canmoa p{
+  padding-bottom: 15px;
+}
+.con2-canmoa li:nth-child(2){
+  display: none;
+}
+.con2-canmoa li:nth-child(3){
+  display: none;
+}
+.view-open{
+  border: 1px solid rgb(252, 187, 89);
+  border-radius: 5px;
+  padding: 10px;
+}
+.view-img img{
+  width: 280px;
+  height: 280px;
+  padding-left: 20px;
+}
+
+/* 마우스 호버 */
+.view-open:hover {
+  background-color: rgb(224, 146, 0);
+  color: #fff;
+}
+
+.con2-mun a:hover {
+  background-color: rgb(252, 210, 132);
+  border-radius: 8px;
+}
+
+/* 활성화된 항목 스타일 */
+.con2-mun li.on-1 a,
+.con2-mun li.on-2 a,
+.con2-mun li.on-3 a {
+  background-color: rgb(252, 210, 132);
+  border-radius: 8px;
+  color: #fff;
+}
+
+/* 비활성화된 항목 스타일 */
+.con2-mun li a {
+  color: #363636;
+}
+
+/* 제이쿼리 css */
+.pofo{
+  background-color: rgb(252, 210, 132);
+  border-radius: 8px;
+  padding: 15px;
+}
+/* -------------------------------------------- */
+
+/* 포폴 2 일러스트 */
+.con3-portfolio2 h3{
+  padding-top: 100px;
+  padding-bottom: 20px;
+  font-size: 35px;
+  color: #363636;
+  padding-left: 30px;
+}
+.con3-1{
+  list-style: none;
+  width:95%;
+  display: flex;
+  gap:50px 10px;
+  flex-wrap: wrap;
+  padding-left: 20px;
+}
+.con3-1 > li{
+  width:calc(100% / 2 - 10px);
+  height:500px;
+  background-color:#ccc;
+}
+.con3-1 > li:nth-child(2n+1){
+  margin-top: 100px;
+}
+.con3-1 li img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.con3-1 .noh{
+  width:100%;
+  height:500px;
+  overflow: hidden;
+  
+}
+/* 마우스 호버 */
+.con3-1 > li:hover img{
+  transform: scale(1.2);
+  transition: 1s;
+}
+
+/* --------------------------------------------- */
+
+/* contact */
+.con4-contact h3{
+  padding-top: 130px;
+  padding-bottom: 50px;
+  font-size: 35px;
+  color: #363636;
+  padding-left: 30px;
+}
+.con4-contact ul{
+  display: flex;
+  gap:30px;
+}
+.con4-contact li > img{
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  padding: 20px;
+}
+.con4-contact li > p{
+  font-size: 17px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+.con4-contact li > span{
+  color:#444444;
+}
+.font-size-gr{
+  padding: 20px 0px 0px 50px;
+  line-height: 30px;
+  width: 328px;
+  height: 150px;
+  color: #6e6e6e;
+  background-color:rgb(255, 201, 99);
+  border-radius: 50px 0px 0px 0px;
+  margin-top: 20px;
+}
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*------------------------태블릿 버전-------------------------*/
+@media(min-width:800px) and (max-width:1200px){
+  .none,.none-1-1{
+    display: none;
+  }
+  /* 배경 */
+body {
+  background-image: url(../img/main_visual_bg\ copy-1.jpg);
+  background-size: 100px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+/*노란색 틀*/
+.bookcover {
+  background-color: rgb(252, 199, 102);
+  border-radius: 9px;
+  border: 1px solid #738186;
+  width: 1100px;
+  height: 750px;
+  margin: 50px auto;
+  position: relative;
+}
+/*흰색 선*/
+.bookdot {
+  border-radius: 9px;
+  border: 2px dashed #ffffff;
+  padding: 15px;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  right: 15px;
+  bottom: 15px;
+}
+/*안쪽 회색배경*/
+.page {
+  background-color: #eeeeee;
+  border-radius: 9px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+  display: flex;
+  padding: 15px;
+}
+/*프로필 (왼쪽) 박스*/
+.profile-container {
+  flex: 0.4;
+  margin-right: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+/*미니룸 (중앙) 박스*/
+.content-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+/*메뉴바 (오른쪽) 박스*/
+.menu-container {
+  flex: 0.15;
+}
+/* -------------------------------------- */
+
+/* 링 누끼 */
+.ring-1 img{
+  width: 72px;
+  height: 80px;
+}
+.ring-1{
+  position: absolute;
+  top:18%;
+  left: 16%;
+}
+.ring-2 img{
+  width: 72px;
+  height: 80px;
+}
+.ring-2{
+  position: absolute;
+  top:24%;
+  left: 16%;
+}
+.ring-3 img{
+  width: 72px;
+  height: 80px;
+}
+.ring-3{
+  position: absolute;
+  bottom:25%;
+  left: 16%;
+}
+.ring-4 img{
+  width: 72px;
+  height: 80px;
+}
+.ring-4{
+  position: absolute;
+  bottom: 19%;
+  left: 16%;
+}
+.header {
+  flex: 0.1;
+}
+/* -------------------------------------- */
+
+/* 안에 큰 회색 박스 */
+.box {
+  background-color: white;
+  flex: 3;
+  border-radius: 10px;
+  border: 1px solid #cdcdcd;
+}
+
+/* 위시월드 로고있는곳 */
+.content-title {
+  display: flex;
+  align-items: center;
+}
+
+.content-title-name {
+  flex: 1;
+  padding-bottom: 5px;
+}
+/* --------------------프로필--------------- */
+
+/* 프로필 투데이 토탈 */
+.profile-title {
+  padding-bottom: 5px;
+  font-size: 0.8rem;
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  gap:5px;
+  color: rgb(75, 75, 75);
+}
+.color-orange {
+  color: orange
+}
+
+/* 프로필 박스 */
+.profile-box {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+/* 프로필 이미지 */
+.profile-image {
+  flex: none;
+}
+
+.profile-image-img {
+  width: 100%;
+  height: 100%;
+}
+/* 프로필 밑 점선 */
+.border1{
+  border-bottom: 1px dashed #ddd;
+  padding-top: 10px;
+}
+/* 프로필 아래 텍스트 */
+.profile-text {
+  width: 100%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-size: 0.75rem;
+  line-height:3;
+  flex: 1;
+  /* font-size: 13px; */
+  font-family: 'Interop';
+}
+.profile-text h6{
+  font-size: 12px;
+  color:#003399;
+}
+.profile-text p{
+  font-size: 13px;
+  line-height:10px;
+  padding-bottom: 12px;
+}
+/*프로필 이름 아래*/
+.profile-use{
+  flex: 0;
+}
+.profile-use span{
+  font-size: 18px;
+  font-weight: bold;
+  color: #003399;
+}
+.profile-use p{
+  color: orange;
+  font-size: 12px;
+}
+.border2{
+  border-top: 1px dashed #ddd;
+  padding-bottom: 5px;
+}
+.content-box{
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  overflow: auto;
+}
+
+/* --------------------메뉴바--------------- */
+
+/*메뉴바*/
+.menu-button button{
+  width: 75px;
+  height: 50px;
+  text-align: left;
+  margin-bottom: 0.9rem;
+  font-size: 0.9rem;
+  font-family: 'Interop';
+  padding: 0.4rem;
+  background-color: rgb(252, 187, 89);
+  color:#000;
+  border-radius: 0 5px 5px 0;
+  border: 1px solid grey;
+  cursor: pointer;
+}
+
+/* 메뉴바 위치 */
+.menu-button:first-child{
+  margin-top: 3rem;
+}
+
+/* 메뉴바 호버 */
+a button:hover {
+  background-color:#fff;
+  color:  rgb(252, 187, 89);
+}
+
+/* --------------------프로필--------------- */
+/* 프로필 파도타기 */
+.profile-dropdown{
+  flex: 0;
+  border: 1px solid #c9d4da;
+  padding: 5px;
+  margin-top: 10px;
+  font-size: 0.8rem;
+  position: relative;
+  height: 18px;
+}
+.dropdown-title{
+  display: flex;
+  justify-content: space-between;
+}
+/* 인스타그램 아래 태그 숨기기 */
+.dropdown-content{
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+/* 인스타 마우스 호버하면 보이게 */
+.profile-dropdown:hover > .dropdown-content{
+  display: block;
+}
+
+.dropdown-content > a{
+  display: block;
+  background-color: #f9f9f9;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  padding: 6px;
+  color: black;
+  text-decoration: none;
+}
+
+.dropdown-content > a:hover{
+  background-color: #f1f1f1;
+}
+/* --------------------미니룸------------------ */
+
+/* 미니룸 박스 */
+.miniroom-gif-box {
+  border: 1px solid #d6d6d6;
+  width:600px;
+  height:280px;
+}
+/* 미니룸 사진 */
+.miniroom-gif-box img{
+  width:600px;
+  height:280px;
+}
+/* 미니룸 글자 */
+.box-title ul{
+  display: flex;
+  justify-content: space-between;
+}
+.box-title li:last-child{
+  color:#6e6e6e;
+  font-size: 10px;
+}
+.box-title {
+  font-size: 12px;
+  font-family: "KOTRA_BOLD-Bold";
+  color: #268ab8;
+  padding-bottom: 5px;
+}
+/* --------------------프렌드------------------ */
+
+/* 프렌드 세이 박스 */
+.say > ul{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px;
+  padding-bottom: 5px;
+}
+.say-font{
+  height: 25px;
+  line-height: 25px;
+  font-size: 15px;
+  font-family: 'Interop';
+  font-weight: bolder;
+  color: #6e6e6e;
+}
+.say-box1{
+  width: 75%;
+  height: 26px;
+  border: 1px solid #ddd;
+  font-size: 12px;
+  font-family: 'IBMPlexSansKR-Regular';
+  text-align: center;
+  line-height: 25px;
+  box-sizing: border-box;
+}
+.say-box2{
+  border: 1px solid #ddd;
+  font-size: 11px;
+  font-family: 'IBMPlexSansKR-Regular';
+  width:8%;
+  text-align: center;
+  height: 24px;
+  line-height: 24px;
+}
+/* 친구들 생각*/
+.friend{
+  font-size: 12.5px;
+  line-height: 28px;
+  border-bottom: 1px solid #ddd;
+}
+.color-blue{
+  color: #003399;
+  font-weight: bold;
+}
+.color-gray{
+  color:#738186;
+  font-size: 11px;
+}
+/* 스킬 */
+.none-1 > ul{
+  display: flex;
+  width:100%;
+}
+.none-1 h1{
+  font-size: 40px;
+  height:40px;
+  line-height: 30px;
+  color: #666666;
+  padding-top: 80px;
+  padding-left: 30px;
+}
+.none-1 li{
+  width:20%;
+  height: 40px;
+  line-height: 40px;
+  font-size: 17px;
+  padding-left: 30px;
+}
+
+/* --------------------스킬------------------ */
+
+/* 스킬 막대기 */
+.one{
+  width:100%;
+  height:40px;
+  background-color:#ddd;
+  margin: 12px;
+}
+.one div{
+  height:100%;
+  text-align:center;
+  line-height:40px;
+}
+.one-pink{
+  width:0%;
+  color:#5f5f5f;
+  background-color:#fbc15d}
+.one-blue{
+  width:0%;
+  color:#5f5f5f;
+  background-color:#ffc59e}
+.one-yellow{
+  width:0%;
+  color:#5f5f5f;
+  background-color:#ffc59e}
+.one-red{
+  width:0%;
+  color:#5f5f5f;
+  background-color:#fbc15d}
+.one-green{
+  width:0%;
+  color:#5f5f5f;
+  background-color:#fbc15d}
+.one-purple{
+  width:0%;
+  color:#474747;
+  background-color:#fbc15d}
+
+  /* --------------------안씀------------------- */
+
+/* 음악 박스 */
+.play{
+  width:180px;
+  height: 80px;
+  background-color: #ddd;
+  margin-top: 15px;
+  border: 1px solid #444444;
+  position: absolute;
+  left:90%;
+  top:39%;
+}
+.play-mu{
+  width: 180px;
+  height: 38px;
+  background-color: #fff;
+  border-bottom: 1px solid #444444;
+  text-align: center;
+  font-size: 15px;
+  line-height: 38px;
+  color:#363636;
+}
+/* 음악 아이콘 */
+.play > ul{
+  display: flex;
+}
+.play > ul li i{
+  font-size: 13px;
+  padding: 5px;
+  margin-top: 8px;
+}
+.play > li{
+  height: 20px;
+  text-align: center;
+  line-height: 25px;
+}
+.graph-1{
+  width:100%;
+  height:8px;
+  background-color:#494949;
+  margin-top: 16px;
+}
+.graph-1 div{
+  height:100%;
+  text-align:center;
+  line-height:40px;
+}
+.stick-box{
+  width:55%;
+  background-color:orange;}
+.play li:last-child{
+  background-color: #494949;
+  color: #fff;
+  font-size: 15px;
+  font-weight: lighter;
+  margin: 6px 5px;
+  height: 25px;
+  width: 100px;
+}
+/* --------------------포폴------------------ */
+
+/* 포트폴리오1 페이지 */
+.con2-portfolio{
+  padding: 50px 0px;
+}
+.con2-portfolio h3{
+  font-size: 40px;
+  height:40px;
+  line-height: 30px;
+  color: #666666;
+  padding: 20px 0px 30px 0px;
+  padding-left: 30px;
+}
+.con2-canmoa li{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding-bottom: 30px;
+  line-height: 40px;
+  padding-left: 30px;
+}
+.con2-box1{
+  display: flex;
+
+  justify-content: space-between;
+}
+.con2-box2{
+  display: flex;
+  justify-content: space-between;
+}
+.con2-box3{
+  display: flex;
+  justify-content: space-between;
+}
+.con2-mun{
+  display: flex;
+  gap:60px;
+  justify-content: center;
+  margin-bottom: 50px;
+  margin-top: 20px;
+}
+.con2-mun a{
+  font-size: 18px;
+  font-weight: bold;
+  color: #363636;
+  padding: 15px;
+}
+.con2-canmoa{
+  width:660px;
+}
+.con2-canmoa h4{
+  font-size: 23px;
+  padding-bottom: 10px;
+}
+.con2-canmoa span{
+  font-size: 20px;
+}
+.con2-canmoa p{
+  padding-bottom: 15px;
+}
+.con2-canmoa li:nth-child(2){
+  display: none;
+}
+.con2-canmoa li:nth-child(3){
+  display: none;
+}
+.view-open{
+  border: 1px solid rgb(252, 187, 89);
+  border-radius: 5px;
+  padding: 10px;
+}
+.view-img img{
+  width: 280px;
+  height: 280px;
+  padding-left: 20px;
+}
+/* 마우스 호버 */
+.view-open:hover{
+  background-color:rgb(224, 146, 0);
+  color: #fff;
+}
+.con2-mun a:hover{
+  background-color: rgb(252, 210, 132);
+  border-radius: 8px;
+}
+/* 제이쿼리 css */
+.pofo{
+  background-color: rgb(252, 210, 132);
+  border-radius: 8px;
+  padding: 15px;
+}
+/* -------------------------------------------- */
+
+/* 포폴 2 일러스트 */
+.con3-portfolio2 h3{
+  padding-top: 100px;
+  padding-bottom: 20px;
+  font-size: 35px;
+  color: #363636;
+  padding-left: 30px;
+}
+.con3-1{
+  list-style: none;
+  width:95%;
+  display: flex;
+  gap:50px 10px;
+  flex-wrap: wrap;
+  padding-left: 20px;
+}
+.con3-1 > li{
+  width:calc(100% / 2 - 10px);
+  height:200px;
+  background-color:#ccc;
+}
+.con3-1 > li:nth-child(2n+1){
+  margin-top: 120px;
+}
+.con3-1 li img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.con3-1 .noh{
+  width:100%;
+  height:200px;
+  overflow: hidden;
+  
+}
+/* 마우스 호버 */
+.con3-1 > li:hover img{
+  transform: scale(1.2);
+  transition: 1s;
+}
+
+/* --------------------------------------------- */
+
+/* contact */
+.con4-contact h3{
+  padding-top: 130px;
+  padding-bottom: 50px;
+  font-size: 35px;
+  color: #363636;
+  padding-left: 30px;
+}
+.con4-contact ul{
+  display: flex;
+  gap:30px;
+}
+.con4-contact li > img{
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  padding: 20px;
+}
+.con4-contact li > p{
+  font-size: 17px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+.con4-contact li > span{
+  color:#444444;
+}
+.font-size-gr{
+  padding: 20px 0px 0px 50px;
+  line-height: 30px;
+  width: 328px;
+  height: 150px;
+  color: #6e6e6e;
+  background-color:rgb(255, 201, 99);
+  border-radius: 50px 0px 0px 0px;
+  margin-top: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+@media(max-width:800px){
+
+  /* 모바일에서 안보이게 */
+.menu-button{
+  display: none;
+}
+.box-skill{
+  display: none;
+}
+.play{
+  display: none;
+}
+.content-title-name{
+  display: none;
+}
+
+  /* 배경 */
+  body{
+    background-image: url(../img/main_visual_bg\ copy-1.jpg);
+    background-size: 100px;
+  }
+  #big-box {
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+  }
+  /*노란색 배경*/
+  .bookcover {
+    background-color: rgb(252, 199, 102);
+    border-radius: 9px;
+    border: 1px solid #738186;
+    height: 5550px;
+    position: relative;
+  }
+  /*흰색 선*/
+  .bookdot {
+    border-radius: 9px;
+    border: 2px dashed #ffffff;
+    padding: 15px;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    right: 15px;
+    bottom: 15px;
+  }
+  /*안쪽 회색배경*/
+  .page {
+    background-color: #eeeeee;
+    border-radius: 9px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    padding: 15px;
+    flex-direction: column;
+    /* overflow:scroll;
+    z-index: 900; */
+  }
+/* 로고 */
+.none{
+  font-size: 50px;
+  text-align: center;
+  padding-top: 20px;
+}
+.none i{
+  font-size: 30px;
+  border: 1px solid #ddd;
+  background-color: #c0c0c0;
+  color: #ddd;
+  padding: 9px 11px;
+  position: absolute;
+  right: 28px;
+  top:828px;
+  position: fixed;
+}
+
+/* 토탈 투데이*/
+.profile-title{
+  font-size: 16px;
+  padding: 50px 0px 10px 0px;
+  text-align: center;
+}
+.color-orange{
+  color:orange;
+  font-weight: bold;
+}
+
+/* 프로필 아래 텍스트 */
+.profile-text {
+  margin: 1rem;
+  padding: 2rem;
+  line-height:3;
+  flex: 1;
+  font-family: 'Interop';
+}
+.profile-text h6{
+  font-size: 15px;
+  color:#003399;
+}
+.profile-text p{
+  font-size: 17px;
+  line-height:10px;
+  padding-bottom: 12px;
+}
+/* 프로필 밑 점선 */
+.border1{
+  border-bottom: 1px dashed #fff;
+  padding-top: 20px;
+}
+
+/* 프로필 이미지 */
+.profile-image{
+  text-align: center;
+  margin-top: 10px;
+}
+.profile-image-img{
+  border: 1px solid #363636;
+  border-radius: 10px;
+}
+.profile-use{
+  text-align: center;
+}
+.profile-use p{
+  display: none;
+}
+.none-1-1 > h4{
+  font-size: 20px;
+  font-weight: bold;
+  color:#003399;
+  text-align: center;
+}
+.profile-use span{
+  display: none;
+}
+/* 프로필 파도타기 */
+.profile-dropdown{
+  flex: 0;
+  border: 1px solid #c9d4da;
+  padding: 5px;
+  font-size: 0.9rem;
+  position: relative;
+  height: 18px;
+  width: 70%;
+  margin:0px 60px;
+}
+.dropdown-title{
+  display: flex;
+  justify-content: space-between;
+}
+/* 인스타그램 아래 태그 숨기기 */
+.dropdown-content{
+  display: none;
+  position: absolute;
+  top: -30;
+  left: 0;
+  width: 96%;
+}
+/* 인스타 마우스 호버하면 보이게 */
+.profile-dropdown:hover > .dropdown-content{
+  display: block;
+}
+
+.dropdown-content > a{
+  display: block;
+  background-color: #f9f9f9;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  padding: 6px;
+  color: black;
+  text-decoration: none;
+}
+
+.dropdown-content > a:hover{
+  background-color: #f1f1f1;
+}
+/* 링 누끼 */
+.ring-1,.ring-2,.ring-3,.ring-4 img{
+  display: none;
+}
+
+/*미니룸*/
+.box-title ul{
+  display: flex;
+  justify-content: space-between;
+  margin: 15px 0px;
+  border-top: 1px dashed #fff;
+  margin-top: 30px;
+  padding-top: 25px;
+}
+.box-title li:first-child{
+  color:#268ab8;
+}
+.miniroom-gif-box img{
+  width: 100%;
+}
+/* 프렌드 세이 박스 */
+.say > ul{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px;
+  padding-bottom: 5px;
+}
+.say-font{
+  height: 25px;
+  line-height: 25px;
+  font-size: 13px;
+  font-family: 'Interop';
+  font-weight: bold;
+  color: #6e6e6e;
+}
+.say-box1{
+  width: 72%;
+  height: 26px;
+  border: 1px solid #ddd;
+  font-size: 12px;
+  font-family: 'IBMPlexSansKR-Regular';
+  text-align: center;
+  line-height: 25px;
+  box-sizing: border-box;
+}
+.say-box2{
+  border: 1px solid #ddd;
+  font-size: 11px;
+  font-family: 'IBMPlexSansKR-Regular';
+  width:8%;
+  text-align: center;
+  height: 24px;
+  line-height: 24px;
+}
+/* 친구들 생각*/
+.friend{
+  font-family: 'IBMPlexSansKR-Regular';
+  font-size: 12px;
+  line-height: 28px;
+  border-bottom: 1px solid #ddd;
+}
+.color-blue{
+  color: #003399;
+  font-weight: bold;
+}
+.color-gray{
+  color:#738186;
+  font-size: 11px;
+}
+/* -------------스킬-------------- */
+
+/* 스킬 */
+.none-1{
+padding-top: 25px;
+text-align: center;
+}
+.none-1 ul{
+  display: flex;
+  width:100%;
+}
+.none-1 h1{
+  font-size: 30px;
+  height:40px;
+  line-height: 30px;
+  color: #666666;
+  padding-bottom: 30px;
+}
+.none-1 li{
+  width:25%;
+  height: 30px;
+  line-height: 30px;
+  font-size: 15px;
+}
+/* 스킬 막대기 */
+.one{
+  width:100%;
+  height:20px;
+  background-color:#ddd;
+  margin: 12px;
+}
+.one div{
+  height:100%;
+  text-align:center;
+  line-height:20px;
+}
+.one-pink{
+  width:70%;
+  color:#5f5f5f;
+  background-color:#fbc15d}
+.one-blue{
+  width:65%;
+  color:#5f5f5f;
+  background-color:#ffc59e}
+.one-yellow{
+  width:55%;
+  color:#5f5f5f;
+  background-color:#ffc59e}
+.one-red{
+  width:80%;
+  color:#5f5f5f;
+  background-color:#fbc15d}
+.one-green{
+  width:75%;
+  color:#5f5f5f;
+  background-color:#fbc15d}
+.one-purple{
+  width:70%;
+  color:#474747;
+  background-color:#fbc15d}
+
+/* 포트폴리오1 페이지 */
+.con2-portfolio{
+  text-align: center;
+}
+.con2-portfolio h3{
+  font-size: 30px;
+  height:40px;
+  line-height: 30px;
+  color: #666666;
+  padding-top: 50px;
+  padding-bottom: 30px;
+}
+.con2-mun{
+  display: flex;
+  gap:30px;
+  justify-content: center;
+  /* margin: 20px; */
+}
+.con2-mun a{
+  font-size: 18px;
+  font-weight: bold;
+  color: #363636;
+  padding: 15px;
+}
+.con2-canmoa{
+  padding-top: 50px;
+}
+.con2-canmoa > li{
+  width: 100%;
+  padding-bottom: 30px;
+  line-height: 40px;
+}
+.con2-1{
+  margin: 10px;
+}
+.con2-canmoa h4{
+  font-size: 20px;
+}
+.con2-canmoa p{
+  font-size: 13px;
+}
+.con2-canmoa li:nth-child(2){
+  display: none;
+}
+.con2-canmoa li:nth-child(3){
+  display: none;
+}
+.view-open{
+  border: 1px solid rgb(252, 187, 89);
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+}
+.view-img img{
+  width: 280px;
+  height: 280px;  
+  padding-top: 50px;
+}
+/* 마우스 호버 */
+.view-open:hover{
+  background-color:rgb(224, 146, 0);
+  color: #fff;
+}
+.con2-mun a:hover{
+  background-color: rgb(252, 210, 132);
+  border-radius: 8px;
+}
+/* 제이쿼리 css */
+.pofo{
+  background-color: rgb(252, 210, 132);
+  border-radius: 8px;
+  padding: 15px;
+}
+
+/* 포폴 2 일러스트 */
+.con3-portfolio2{
+  text-align: center;
+}
+.con3-portfolio2 h3{
+  font-size: 30px;
+  height:40px;
+  line-height: 30px;
+  color: #666666;
+  padding-bottom: 30px;
+}
+.con3-1 > li{
+  background-color:#ccc;
+  width: 90%;
+  height: 300px;
+  margin: 50px auto;
+}
+.con3-1 .noh{
+  width:100%;
+  height:100%;
+  overflow: hidden;
+  
+}
+/* 마우스 호버 */
+.con3-1 > li:hover img{
+  transform: scale(1.2);
+  transition: 1s;
+}
+
+/* contact */
+
+.con4-contact h3{
+  font-size: 30px;
+  height:40px;
+  line-height: 30px;
+  color: #666666;
+  padding-top: 30px;
+}
+.con4-contact li > img{
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  padding: 50px auto;
+}
+.con4-contact li > p{
+  font-size: 17px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+.con4-contact li > span{
+  color:#444444;
+}
+.con4-contact li{
+  text-align: center;
+}
+.font-size-gr{
+  padding: 20px 0px 0px 50px;
+  line-height: 30px;
+  width: 93%;
+  height: 150px;
+  color: #6e6e6e;
+  background-color:rgb(255, 201, 99);
+  border-radius: 50px 0px 0px 0px;
+  margin-top: 20px;
+}
+.con3-1 li img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
